@@ -3,8 +3,9 @@
 #Now set in Dockerfile
 #KEYBOX_VERSION=2.84_00
 
-KEYBOX_URL=https://github.com/skavanagh/KeyBox/releases/download/v${KEYBOX_VERSION/_/.}/keybox-jetty-v$KEYBOX_VERSION.tar.gz
-
+#KEYBOX_URL=https://github.com/skavanagh/KeyBox/releases/download/v${KEYBOX_VERSION/_/.}/keybox-jetty-v$KEYBOX_VERSION.tar.gz
+KEYBOX_URL=https://github.com/nickmisasi13/KeyBox/releases/download/v${KEYBOX_VERSION/_/.}/keybox-jetty-v$KEYBOX_VERSION.tar.gz
+#https://github.com/nickmisasi13/KeyBox/releases/download/v2.86.00-01/keybox-jetty-v2.86_00.tar.gz
 function relpath() { python3 -c "import os,sys;print(os.path.relpath(*(sys.argv[1:])))" "$@"; }
 
 cd /setup
