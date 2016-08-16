@@ -19,4 +19,4 @@ if [ ! -f Dockerfile ]; then
   exit 1
 fi
 docker build -t $prodimage .
-docker tag -f $prodimage $IMAGE_NAME:latest
+docker tag $prodimage $IMAGE_NAME:latest
